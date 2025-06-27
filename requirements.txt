@@ -1,7 +1,9 @@
 fastapi
 uvicorn[standard]
+gunicorn
 pydantic
 langchain
 langchain-groq
 composio-langchain
 python-dotenv
+
