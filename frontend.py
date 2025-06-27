@@ -25,7 +25,7 @@ if st.button("Execute"):
     else:
         with st.spinner("Contacting backend and processing your request..."):
             try:
-                response = requests.post("https://tailortalk-3.onrender.com/", json={"prompt": user_input})
+                response = requests.post("https://tailortalk-3.onrender.com/run", json={"prompt": user_input})
                 result = response.json()
 
                 if response.status_code == 200:
